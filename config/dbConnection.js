@@ -3,7 +3,7 @@ require("dotenv").config();
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.wxlw6qm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 mongoose
-  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(uri)
   .then((result) => {
     console.log("connected to db");
   })

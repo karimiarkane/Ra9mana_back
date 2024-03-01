@@ -5,7 +5,9 @@ const User = require("../../models/userModel")
 
 
 
-
+authRouter.get("/",(req,res)=>{
+    res.send("auth")
+})
 
 authRouter.post("/signUp",authController.createUser)
 authRouter.post("/loginUser",authController.loginUser)

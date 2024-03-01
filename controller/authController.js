@@ -15,7 +15,9 @@ const generateToken = (_id) => {
 const createUser = async (req, res, next) => {
   //user data validation
   //check emptiness
-  const { userData } = req.body;
+  console.log(req.body)
+  const  userData  = req.body;
+  console.log(userData)
 
   if (
     !userData.firstName ||
